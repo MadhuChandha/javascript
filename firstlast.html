@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FIRSTLAST</title>
+    </head>
+    <script>
+      function firstlast(text)
+      {
+          var f=text.substring(0,3);
+          var l=text.substring(text.length-3,text.length+1);//last 3 letters for eg: in nivisha takes s here and prints upto length of my name +1 position 
+          if(text.length<3)
+              return text;
+          else
+              return f+l;
+      }
+      document.writeln(firstlast("MADHUCHANDHA"));
+    </script>
+    <body>
+    </body>
+</html>
